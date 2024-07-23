@@ -1,0 +1,38 @@
+Service:
+  RegionId: cn-hangzhou
+  DeployType: ros
+  TenantType: SingleTenant
+  DeployMetadata:
+    ServiceInstanceNameRule:
+      Prefix: wy-
+    SupplierDeployMetadata:
+      RoleName: ${RoleName}
+      UserType: Aliyun
+      SupplierTemplateConfigs:
+        - Name: 模板一
+          Url: 'ros_templates/template.yaml'
+          PredefinedParameters: []
+          HiddenParameterKeys:
+            - VpcId
+            - VSwitchId
+            - ZoneId
+          ParameterMappings:
+            - ParameterKey: RegionId
+              ParameterMappingKeys:
+                - OfficeSiteId
+                - BundleId
+                - PolicyGroupId
+              ParameterValueMapping:
+                cn-hangzhou:
+                  Parameters:
+                    OfficeSiteId: ${OfficeSiteId}
+                    BundleId: ${BundleId}
+                    PolicyGroupId: ${PolicyGroupId}
+  ServiceType: managed
+  ServiceInfo:
+    Locale: zh-CN
+    ShortDescription: Wuying demo
+    Image: 'resources/icons/service_logo.png'
+    Name: 无影托管版
+  ShareType: Public
+  ApprovalType: Manual

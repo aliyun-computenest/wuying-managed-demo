@@ -1,0 +1,41 @@
+ROSTemplateFormatVersion: '2015-09-01'
+Parameters:
+  Phone:
+    Label:
+      en: Phone
+      zh-cn: 手机号
+    Description: 请输入11位手机号码，用户密码将会在无影创建完成后发送短信至手机。
+    Type: String
+    Default: '15359226610'
+  Name:
+    Label:
+      en: Name
+      zh-cn: 用户名
+    Description: 不超过 64 个字符，必须以大小字母或中文开头，不能以http://和https://开头，可以包含中文、英文、数字、半角冒号（:）、下划线（_）、点号（.）或者短划线（-）。
+    Type: String
+    Default: user
+  OfficeSiteId:
+    Label:
+      en: OfficeSiteID
+      zh-cn: 办公网络ID
+    Type: String
+  BundleId:
+    Label:
+      en: BundleID
+      zh-cn: 模板ID
+    Type: String
+  PolicyGroupId:
+    Label:
+      en: PolicyGroupId
+      zh-cn: 策略ID
+    Type: String
+Metadata:
+  ALIYUN::ROS::Interface:
+    ParameterGroups:
+      - Parameters:
+          - Name
+          - Phone
+        Label:
+          default:
+            en: User Info
+            zh-cn: 用户信息
