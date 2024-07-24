@@ -1,1 +1,0 @@
-# wuying-managed-demo
