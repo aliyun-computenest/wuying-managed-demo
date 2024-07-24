@@ -15,18 +15,21 @@ Parameters:
       en: OfficeSiteID
       zh-cn: 办公网络ID
     Type: String
+    AssociationProperty: ALIYUN::EDS::OfficeSite::OfficeSiteId
   #自定义模板ID
   BundleId:
     Label:
       en: BundleID
       zh-cn: 模板ID
     Type: String
+    AssociationProperty: ALIYUN::EDS::Bundle::BundleId
   #策略ID
   PolicyGroupId:
     Label:
       en: PolicyGroupId
       zh-cn: 策略ID
     Type: String
+    AssociationProperty: ALIYUN::EDS::PolicyGroup::PolicyGroupId
 Metadata:
   ALIYUN::ROS::Interface:
     # 定义资源分组，创建服务实例时，同一分组的参数分布在一起

@@ -17,16 +17,19 @@ Parameters:
       en: OfficeSiteID
       zh-cn: 办公网络ID
     Type: String
+    AssociationProperty: ALIYUN::EDS::OfficeSite::OfficeSiteId
   BundleId:
     Label:
       en: BundleID
       zh-cn: 模板ID
     Type: String
+    AssociationProperty: ALIYUN::EDS::Bundle::BundleId
   PolicyGroupId:
     Label:
       en: PolicyGroupId
       zh-cn: 策略ID
     Type: String
+    AssociationProperty: ALIYUN::EDS::PolicyGroup::PolicyGroupId
 Outputs:
   AccessAddress:
     Label:
