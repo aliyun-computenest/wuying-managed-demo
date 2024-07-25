@@ -50,18 +50,6 @@ Resources:
         Ref: PolicyGroupId
       Amount: 1
       ChargeType: Postpaidindex.md
-  参数预览.jpg
-  无影登陆链接.jpg
-  无影登陆页.jpg
-  无影账号密码页.jpg
-  服务商侧待部署.jpg
-  服务实例创建页.jpg
-  用户侧待部署.jpg
-  用户侧部署中.jpg
-  短信.jpg
-  部署中.jpg
-  部署完成.jpg
-  部署链接.jpg
       EndUserId:
         - Fn::Jq:
             - First
