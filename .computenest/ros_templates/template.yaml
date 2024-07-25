@@ -49,7 +49,7 @@ Resources:
       PolicyGroupId:
         Ref: PolicyGroupId
       Amount: 1
-      ChargeType: Postpaidindex.md
+      ChargeType: Postpaid
       EndUserId:
         - Fn::Jq:
             - First
