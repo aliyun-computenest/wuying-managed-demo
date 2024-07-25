@@ -13,9 +13,9 @@ Service:
           Url: 'ros_templates/template.yaml'
           PredefinedParameters: []
           HiddenParameterKeys:
-            - VpcId
-            - VSwitchId
-            - ZoneId
+            - OfficeSiteId
+            - BundleId
+            - PolicyGroupId
           ParameterMappings:
             - ParameterKey: RegionId
               ParameterMappingKeys:
