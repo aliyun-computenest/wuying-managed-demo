@@ -28,6 +28,9 @@ Service:
                     OfficeSiteId: ${OfficeSiteId}
                     BundleId: ${BundleId}
                     PolicyGroupId: ${PolicyGroupId}
+    TemplateConfigs:
+      - Name: 模板一
+        ArchitectureDiagramUrl: 'docs/architecture.png'
   ServiceType: managed
   ServiceInfo:
     Locale: zh-CN
